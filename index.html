@@ -44,8 +44,21 @@
   <meta name="twitter:description" content="직장인, 학생, 교사, 프리랜서 등 누구나 쉽게 AI 활용 지식을 배울 수 있는 맞춤형 교육 플랫폼입니다.">
   <meta name="twitter:image" content="https://hjlee27-star.github.io/favicon.svg">
 
-  <!-- Favicon -->
+  <!-- Favicon (multiple formats for compatibility) -->
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+  <!-- DNS Prefetch -->
+  <dns-prefetch href="//fonts.googleapis.com">
+  <dns-prefetch href="//www.google-analytics.com">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -73,9 +86,12 @@
   }
   </script>
 
-  <!-- Stylesheets -->
+  <!-- Stylesheets (non-render-blocking) -->
   <link href="./style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- AdSense (async) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8848342165803400"
      crossorigin="anonymous"></script>
 </head>
